@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*.container {*/
+        /*    display: grid;*/
+        /*    grid-template-columns: 200px 200px 200px;*/
+        /*    grid-template-rows: 100px 100px;*/
+        /*    grid-gap: 20px;*/
+        /*}*/
+    </style>
+</head>
+<body>
+
+<progress value="0" max="100" id="uploader">0%</progress>
+<input type="file" value="upload" accept=".jpg" id="fileButton" multiple>
+<h1>Hello GFG</h1>
+<div id="imgDiv" style="width: 300px; height: 300px"></div>
+<script src="upload_file.js"></script>
+<script>
+    let arr = getImage();
+    console.log('arr =====================>', arr)
+</script>
+</body>
+
+</html>
